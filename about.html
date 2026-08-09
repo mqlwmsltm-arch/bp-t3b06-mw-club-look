@@ -1,345 +1,343 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>망원 클럽 룩북 | 정보 – RAW CONCRETE</title>
-    <meta name="description" content="망원 클럽 룩북 정보 – 이 동네는 규격이 없다. 망원의 진짜 거친 에너지, 길거리 감성 그대로. 010-6279-0862. 지금 바로 터트려라.">
-    <meta name="keywords" content="망원 클럽, 망원 클럽 룩북, 망원 클럽 브루탈리즘, 망원 핫플, 클럽 룩북, 길거리 패션, 클럽 스타일, 망원 브루탈, 망원 클럽 정보">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-raw-concrete">
-    <link rel="canonical" href="https://mangwon-club-info.link-hub.org/about.html">
-    <meta property="og:title" content="망원 클럽 룩북 | 정보 – RAW CONCRETE">
-    <meta property="og:description" content="망원 클럽 룩북 정보 – 이 동네는 규격이 없다. 망원의 진짜 거친 에너지, 길거리 감성 그대로. 010-6279-0862. 지금 바로 터트려라.">
-    <style>
-        /* RESET */
-        *, *::before, *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        html {
-            font-size: 16px;
-            scroll-behavior: smooth;
-        }
-        body {
-            font-family: 'Arial Black', 'Impact', 'Franklin Gothic Heavy', sans-serif;
-            background-color: #1a1a1a;
-            color: #e0e0e0;
-            line-height: 1.4;
-            padding: 0;
-            margin: 0;
-        }
-        /* TYPOGRAPHY – raw brutal */
-        h1, h2, h3, h4 {
-            font-weight: 900;
-            text-transform: uppercase;
-            letter-spacing: -0.02em;
-            color: #f5a623;
-        }
-        h1 {
-            font-size: 4rem;
-            line-height: 0.9;
-            margin-bottom: 1rem;
-            text-shadow: 4px 4px 0 #000;
-        }
-        h2 {
-            font-size: 2.8rem;
-            margin-bottom: 0.75rem;
-            border-left: 8px solid #f5a623;
-            padding-left: 1rem;
-        }
-        h3 {
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
-        }
-        p, li, blockquote {
-            font-size: 1.2rem;
-            font-weight: 700;
-            color: #ccc;
-            margin-bottom: 1rem;
-        }
-        a {
-            color: #f5a623;
-            text-decoration: none;
-            border-bottom: 3px solid #f5a623;
-            transition: all 0.1s ease;
-        }
-        a:hover {
-            color: #fff;
-            background: #f5a623;
-            border-bottom: 3px solid #fff;
-        }
-        /* LAYOUT – full bleed, asymmetric */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-        section {
-            padding: 4rem 0;
-            border-bottom: 4px solid #333;
-        }
-        section:last-of-type {
-            border-bottom: none;
-        }
-        /* NAV – brutal hamburger */
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1.5rem 2rem;
-            background: #111;
-            border-bottom: 6px solid #f5a623;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
-        .nav-links a {
-            font-size: 1.3rem;
-            font-weight: 900;
-            text-transform: uppercase;
-            border-bottom: none;
-            padding: 0.3rem 0.6rem;
-        }
-        .nav-links a:hover {
-            background: #f5a623;
-            color: #000;
-        }
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-            gap: 5px;
-        }
-        .hamburger span {
-            width: 30px;
-            height: 4px;
-            background: #f5a623;
-            display: block;
-        }
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                background: #111;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                padding: 1rem;
-                border-bottom: 6px solid #f5a623;
-            }
-            .nav-links.active {
-                display: flex;
-            }
-            .hamburger {
-                display: flex;
-            }
-            h1 { font-size: 2.8rem; }
-            h2 { font-size: 2rem; }
-            .container { padding: 1rem; }
-        }
-        /* TEL LINK */
-        .tel-link {
-            display: inline-block;
-            background: #f5a623;
-            color: #000;
-            font-size: 1.8rem;
-            font-weight: 900;
-            padding: 0.8rem 2rem;
-            border: 4px solid #fff;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            transition: 0.1s;
-        }
-        .tel-link:hover {
-            background: #fff;
-            color: #f5a623;
-            border-color: #f5a623;
-        }
-        /* CARDS */
-        .card {
-            background: #222;
-            border: 4px solid #f5a623;
-            padding: 2rem;
-            margin-bottom: 2rem;
-        }
-        .grid-2 {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-        }
-        @media (max-width: 768px) {
-            .grid-2 { grid-template-columns: 1fr; }
-        }
-        /* FAQ */
-        .faq-item {
-            border-bottom: 2px solid #444;
-            padding: 1.5rem 0;
-        }
-        .faq-item:last-child { border-bottom: none; }
-        .faq-question {
-            font-size: 1.6rem;
-            font-weight: 900;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-        }
-        .faq-question::after {
-            content: '+';
-            font-size: 2rem;
-        }
-        .faq-answer {
-            display: none;
-            padding-top: 1rem;
-        }
-        .faq-answer.open {
-            display: block;
-        }
-        /* FOOTER */
-        footer {
-            background: #111;
-            padding: 3rem 2rem;
-            text-align: center;
-            border-top: 6px solid #f5a623;
-        }
-        footer p {
-            font-size: 1rem;
-            color: #777;
-        }
-    </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>망원 클럽 룩북 | 정보 – RAW CONCRETE</title>
+ <meta name="description" content="망원 클럽 룩북 정보 – 이 동네는 규격이 없다. 망원의 진짜 거친 에너지, 길거리 감성 그대로. 지금 바로 터트려라.">
+ <meta name="keywords" content="망원 클럽, 망원 클럽 룩북, 망원 클럽 브루탈리즘, 망원 핫플, 클럽 룩북, 길거리 패션, 클럽 스타일, 망원 브루탈, 망원 클럽 정보">
+ <link rel="canonical" href="https://mangwon-club-info.link-hub.org/about.html">
+ <meta property="og:title" content="망원 클럽 룩북 | 정보 – RAW CONCRETE">
+ <meta property="og:description" content="망원 클럽 룩북 정보 – 이 동네는 규격이 없다. 망원의 진짜 거친 에너지, 길거리 감성 그대로. 지금 바로 터트려라.">
+ <style>
+ /* RESET */
+ *, *::before, *::after {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ html {
+ font-size: 16px;
+ scroll-behavior: smooth;
+ }
+ body {
+ font-family: 'Arial Black', 'Impact', 'Franklin Gothic Heavy', sans-serif;
+ background-color: #1a1a1a;
+ color: #e0e0e0;
+ line-height: 1.4;
+ padding: 0;
+ margin: 0;
+ }
+ /* TYPOGRAPHY – raw brutal */
+ h1, h2, h3, h4 {
+ font-weight: 900;
+ text-transform: uppercase;
+ letter-spacing: -0.02em;
+ color: #f5a623;
+ }
+ h1 {
+ font-size: 4rem;
+ line-height: 0.9;
+ margin-bottom: 1rem;
+ text-shadow: 4px 4px 0 #000;
+ }
+ h2 {
+ font-size: 2.8rem;
+ margin-bottom: 0.75rem;
+ border-left: 8px solid #f5a623;
+ padding-left: 1rem;
+ }
+ h3 {
+ font-size: 2rem;
+ margin-bottom: 0.5rem;
+ }
+ p, li, blockquote {
+ font-size: 1.2rem;
+ font-weight: 700;
+ color: #ccc;
+ margin-bottom: 1rem;
+ }
+ a {
+ color: #f5a623;
+ text-decoration: none;
+ border-bottom: 3px solid #f5a623;
+ transition: all 0.1s ease;
+ }
+ a:hover {
+ color: #fff;
+ background: #f5a623;
+ border-bottom: 3px solid #fff;
+ }
+ /* LAYOUT – full bleed, asymmetric */
+ .container {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 2rem;
+ }
+ section {
+ padding: 4rem 0;
+ border-bottom: 4px solid #333;
+ }
+ section:last-of-type {
+ border-bottom: none;
+ }
+ /* NAV – brutal hamburger */
+ nav {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 1.5rem 2rem;
+ background: #111;
+ border-bottom: 6px solid #f5a623;
+ position: sticky;
+ top: 0;
+ z-index: 1000;
+ }
+ .nav-links {
+ display: flex;
+ gap: 2rem;
+ list-style: none;
+ }
+ .nav-links a {
+ font-size: 1.3rem;
+ font-weight: 900;
+ text-transform: uppercase;
+ border-bottom: none;
+ padding: 0.3rem 0.6rem;
+ }
+ .nav-links a:hover {
+ background: #f5a623;
+ color: #000;
+ }
+ .hamburger {
+ display: none;
+ flex-direction: column;
+ cursor: pointer;
+ gap: 5px;
+ }
+ .hamburger span {
+ width: 30px;
+ height: 4px;
+ background: #f5a623;
+ display: block;
+ }
+ @media (max-width: 768px) {
+ .nav-links {
+ display: none;
+ flex-direction: column;
+ background: #111;
+ position: absolute;
+ top: 100%;
+ left: 0;
+ width: 100%;
+ padding: 1rem;
+ border-bottom: 6px solid #f5a623;
+ }
+ .nav-links.active {
+ display: flex;
+ }
+ .hamburger {
+ display: flex;
+ }
+ h1 { font-size: 2.8rem; }
+ h2 { font-size: 2rem; }
+ .container { padding: 1rem; }
+ }
+ /* TEL LINK */
+ .tel-link {
+ display: inline-block;
+ background: #f5a623;
+ color: #000;
+ font-size: 1.8rem;
+ font-weight: 900;
+ padding: 0.8rem 2rem;
+ border: 4px solid #fff;
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ transition: 0.1s;
+ }
+ .tel-link:hover {
+ background: #fff;
+ color: #f5a623;
+ border-color: #f5a623;
+ }
+ /* CARDS */
+ .card {
+ background: #222;
+ border: 4px solid #f5a623;
+ padding: 2rem;
+ margin-bottom: 2rem;
+ }
+ .grid-2 {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 2rem;
+ }
+ @media (max-width: 768px) {
+ .grid-2 { grid-template-columns: 1fr; }
+ }
+ /* FAQ */
+ .faq-item {
+ border-bottom: 2px solid #444;
+ padding: 1.5rem 0;
+ }
+ .faq-item:last-child { border-bottom: none; }
+ .faq-question {
+ font-size: 1.6rem;
+ font-weight: 900;
+ cursor: pointer;
+ display: flex;
+ justify-content: space-between;
+ }
+ .faq-question::after {
+ content: '+';
+ font-size: 2rem;
+ }
+ .faq-answer {
+ display: none;
+ padding-top: 1rem;
+ }
+ .faq-answer.open {
+ display: block;
+ }
+ /* FOOTER */
+ footer {
+ background: #111;
+ padding: 3rem 2rem;
+ text-align: center;
+ border-top: 6px solid #f5a623;
+ }
+ footer p {
+ font-size: 1rem;
+ color: #777;
+ }
+ </style>
   <meta property="og:url" content="https://mangwon-club-info.link-hub.org/about.html">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary">
 </head>
 <body>
-    <nav>
-        <div class="nav-brand" style="font-size:1.8rem; font-weight:900; color:#f5a623; text-transform:uppercase;">망원클럽룩북</div>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="/">홈</a></li>
-            <li><a href="/lookbook">룩북</a></li>
-            <li><a href="/info" style="background:#f5a623; color:#000;">정보</a></li>
-            <li><a href="/contact">연락</a></li>
-        </ul>
-        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </nav>
+ <nav>
+ <div class="nav-brand" style="font-size:1.8rem; font-weight:900; color:#f5a623; text-transform:uppercase;">망원클럽룩북</div>
+ <ul class="nav-links" id="navLinks">
+ <li><a href="/">홈</a></li>
+ <li><a href="/lookbook">룩북</a></li>
+ <li><a href="/info" style="background:#f5a623; color:#000;">정보</a></li>
+ <li><a href="/contact">연락</a></li>
+ </ul>
+ <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+ 
+ 
+ 
+ </div>
+ </nav>
 
-    <main class="container">
-        <!-- SECTION 1: HERO -->
-        <section>
-            <h1>망원 클럽<br>정보 – RAW</h1>
-            <p style="font-size:2rem; font-weight:900; color:#f5a623; text-transform:uppercase;">규격화된 밤은 지겹다. 망원은 다르다.</p>
-            <p>이 동네는 가이드북이 없다. 지도에 없는 클럽, 거친 콘크리트 바닥, 그리고 진짜 피부로 느끼는 음악. 여기가 망원이다. 우리는 규격을 거부한다. 너도 그렇지?<br>지금 바로 터트려라. <a href="tel:010-6279-0862" class="tel-link">010-6279-0862</a></p>
-        </section>
+ <main class="container">
+ <!-- SECTION 1: HERO -->
+ <section>
+ <h1>망원 클럽<br>정보 – RAW</h1>
+ <p style="font-size:2rem; font-weight:900; color:#f5a623; text-transform:uppercase;">규격화된 밤은 지겹다. 망원은 다르다.</p>
+ <p>이 동네는 가이드북이 없다. 지도에 없는 클럽, 거친 콘크리트 바닥, 그리고 진짜 피부로 느끼는 음악. 여기가 망원이다. 우리는 규격을 거부한다. 너도 그렇지?<br>지금 바로 터트려라. </p>
+ </section>
 
-        <!-- SECTION 2: 상세 정보 -->
-        <section>
-            <h2>이 동네의 진짜</h2>
-            <div class="grid-2">
-                <div class="card">
-                    <h3>위치</h3>
-                    <p>서울 마포구 망원동 — 공식 주소는 의미 없다. 골목 안쪽, 낡은 건물 지하, 빨간 벽돌 사이. 찾아내는 게 실력이다.</p>
-                </div>
-                <div class="card">
-                    <h3>분위기</h3>
-                    <p>브루탈리즘 그 자체. 드러난 콘크리트, 깨진 조명, 날것 그대로의 사운드. 뻔한 클럽은 집에나 가라. 여기는 진짜만 남는다.</p>
-                </div>
-                <div class="card">
-                    <h3>입장</h3>
-                    <p>선별? 없다. 간단하다. 진짜 관심 있는 놈만 들어와. 복장 규정 같은 거 없음 — 너의 태도가 규정이다. 하지만 찐따는 걸러진다.</p>
-                </div>
-                <div class="card">
-                    <h3>음악</h3>
-                    <p>테크노, 인더스트리얼, 로우파이, 노이즈 — 장르 따위로 나누지 않는다. 좋으면 좋은 거다. 스피커가 찢어질 때까지.</p>
-                </div>
-            </div>
-        </section>
+ <!-- SECTION 2: 상세 정보 -->
+ <section>
+ <h2>이 동네의 진짜</h2>
+ <div class="grid-2">
+ <div class="card">
+ <h3>위치</h3>
+ <p>서울 마포구 망원동 — 공식 주소는 의미 없다. 골목 안쪽, 낡은 건물 지하, 빨간 벽돌 사이. 찾아내는 게 실력이다.</p>
+ </div>
+ <div class="card">
+ <h3>분위기</h3>
+ <p>브루탈리즘 그 자체. 드러난 콘크리트, 깨진 조명, 날것 그대로의 사운드. 뻔한 클럽은 집에나 가라. 여기는 진짜만 남는다.</p>
+ </div>
+ <div class="card">
+ <h3>입장</h3>
+ <p>선별? 없다. 간단하다. 진짜 관심 있는 놈만 들어와. 복장 규정 같은 거 없음 — 너의 태도가 규정이다. 하지만 찐따는 걸러진다.</p>
+ </div>
+ <div class="card">
+ <h3>음악</h3>
+ <p>테크노, 인더스트리얼, 로우파이, 노이즈 — 장르 따위로 나누지 않는다. 좋으면 좋은 거다. 스피커가 찢어질 때까지.</p>
+ </div>
+ </div>
+ </section>
 
-        <!-- SECTION 3: 망원 시그널 -->
-        <section>
-            <h2>망원 시그널</h2>
-            <p style="font-size:1.5rem;">이 동네를 모르는 놈들은 절대 이해 못 할 것들.</p>
-            <ul style="list-style: none; margin-top:2rem;">
-                <li style="padding:1rem 0; border-bottom:2px solid #333;">✕ 공식 사인 없는 입구 — 찾는 게 미션</li>
-                <li style="padding:1rem 0; border-bottom:2px solid #333;">✕ 24시간 영업 같은 새벽 4시의 에너지</li>
-                <li style="padding:1rem 0; border-bottom:2px solid #333;">✕ 땀과 콘크리트 먼지가 섞인 공기</li>
-                <li style="padding:1rem 0; border-bottom:2px solid #333;">✕ DJ가 관객을 쳐다보지 않음 — 음악만 쳐다봄</li>
-                <li style="padding:1rem 0; border-bottom:2px solid #333;">✕ 계산은 현금만 받는 가끔 — 구식이 짜릿함</li>
-            </ul>
-        </section>
+ <!-- SECTION 3: 망원 시그널 -->
+ <section>
+ <h2>망원 시그널</h2>
+ <p style="font-size:1.5rem;">이 동네를 모르는 놈들은 절대 이해 못 할 것들.</p>
+ <ul style="list-style: none; margin-top:2rem;">
+ <li style="padding:1rem 0; border-bottom:2px solid #333;">✕ 공식 사인 없는 입구 — 찾는 게 미션</li>
+ <li style="padding:1rem 0; border-bottom:2px solid #333;">✕ 24시간 영업 같은 새벽 4시의 에너지</li>
+ <li style="padding:1rem 0; border-bottom:2px solid #333;">✕ 땀과 콘크리트 먼지가 섞인 공기</li>
+ <li style="padding:1rem 0; border-bottom:2px solid #333;">✕ DJ가 관객을 쳐다보지 않음 — 음악만 쳐다봄</li>
+ <li style="padding:1rem 0; border-bottom:2px solid #333;">✕ 계산은 현금만 받는 가끔 — 구식이 짜릿함</li>
+ </ul>
+ </section>
 
-        <!-- SECTION 4: FAQ -->
-        <section>
-            <h2>자주 묻는 — 근데 뻔한 질문</h2>
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">입장료 있어?</div>
-                <div class="faq-answer">있을 때도 있고 없을 때도 있다. 들어오고 싶으면 알아서 해라. 보통 1~2만 원 선. 근데 진짜 원한다면 문지기한테 말 걸어봐.</div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">사진 찍어도 돼?</div>
-                <div class="faq-answer">찍고 싶으면 찍어라. 하지만 플래시 터트리면 너만 손해다. 분위기 깨는 놈은 바로 아웃.</div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">혼자 와도 괜찮아?</div>
-                <div class="faq-answer">오히려 좋아. 여기서 인맥 타령 하지 마. 음악과 공간을 즐기러 온 거면 혼자가 정답이다.</div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">주차 가능?</div>
-                <div class="faq-answer">망원동에서 주차를 바란다고? 대중교통 타고 와라. 아니면 걸어와. 그게 진짜 망원 스타일이다.</div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">왜 망원이야? 홍대는?</div>
-                <div class="faq-answer">홍대는 관광객용이다. 망원은 로컬을 위한 곳. 규격화된 밤에 염증 느꼈다면 여기 와. 한 번 맛보면 못 빠져나온다.</div>
-            </div>
-        </section>
-    </main>
+ <!-- SECTION 4: FAQ -->
+ <section>
+ <h2>자주 묻는 — 근데 뻔한 질문</h2>
+ <div class="faq-item">
+ <div class="faq-question" onclick="toggleFAQ(this)">입장료 있어?</div>
+ <div class="faq-answer">있을 때도 있고 없을 때도 있다. 들어오고 싶으면 알아서 해라. 보통 1~2만 원 선. 근데 진짜 원한다면 문지기한테 말 걸어봐.</div>
+ </div>
+ <div class="faq-item">
+ <div class="faq-question" onclick="toggleFAQ(this)">사진 찍어도 돼?</div>
+ <div class="faq-answer">찍고 싶으면 찍어라. 하지만 플래시 터트리면 너만 손해다. 분위기 깨는 놈은 바로 아웃.</div>
+ </div>
+ <div class="faq-item">
+ <div class="faq-question" onclick="toggleFAQ(this)">혼자 와도 괜찮아?</div>
+ <div class="faq-answer">오히려 좋아. 여기서 인맥 타령 하지 마. 음악과 공간을 즐기러 온 거면 혼자가 정답이다.</div>
+ </div>
+ <div class="faq-item">
+ <div class="faq-question" onclick="toggleFAQ(this)">주차 가능?</div>
+ <div class="faq-answer">망원동에서 주차를 바란다고? 대중교통 타고 와라. 아니면 걸어와. 그게 진짜 망원 스타일이다.</div>
+ </div>
+ <div class="faq-item">
+ <div class="faq-question" onclick="toggleFAQ(this)">왜 망원이야? 홍대는?</div>
+ <div class="faq-answer">홍대는 관광객용이다. 망원은 로컬을 위한 곳. 규격화된 밤에 염증 느꼈다면 여기 와. 한 번 맛보면 못 빠져나온다.</div>
+ </div>
+ </section>
+ </main>
 
-    <footer>
-        <p>망원 클럽 룩북 — RAW CONCRETE 2025<br>진짜를 원하면 전화해 <a href="tel:010-6279-0862" style="border:none; color:#f5a623;">010-6279-0862</a><br>망원의 거친 숨결, 그대로.</p>
-    </footer>
+ <footer>
+ <p>망원 클럽 룩북 — RAW CONCRETE 2025<br>진짜를 원하면 전화해 <br>망원의 거친 숨결, 그대로.</p>
+ </footer>
 
-    <script>
-        function toggleMenu() {
-            document.getElementById('navLinks').classList.toggle('active');
-        }
-        function toggleFAQ(el) {
-            const answer = el.nextElementSibling;
-            answer.classList.toggle('open');
-            el.classList.toggle('active');
-            if (el.classList.contains('active')) {
-                el.querySelector('::after')?.remove(); // 간단 처리: 아이콘 변경은 css로
-            }
-        }
-        // FAQ 아이콘 수동 처리 (간단)
-        document.querySelectorAll('.faq-question').forEach(q => {
-            q.addEventListener('click', function() {
-                // 이미 css에서 + 표시, active 시 - 로 바꾸는 추가 css 필요 없이 간단 처리
-                if (this.classList.contains('active')) {
-                    this.style.setProperty('--icon', "'-'");
-                } else {
-                    this.style.setProperty('--icon', "'+'");
-                }
-            });
-        });
-        // 추가 아이콘 처리 안함 (대충 넘어감)
-    </script>
-    <style>
-        .faq-question.active::after {
-            content: '-' !important;
-        }
-        .faq-question::after {
-            content: '+';
-        }
-    </style>
+ <script>
+ function toggleMenu() {
+ document.getElementById('navLinks').classList.toggle('active');
+ }
+ function toggleFAQ(el) {
+ const answer = el.nextElementSibling;
+ answer.classList.toggle('open');
+ el.classList.toggle('active');
+ if (el.classList.contains('active')) {
+ el.querySelector('::after')?.remove(); // 간단 처리: 아이콘 변경은 css로
+ }
+ }
+ // FAQ 아이콘 수동 처리 (간단)
+ document.querySelectorAll('.faq-question').forEach(q => {
+ q.addEventListener('click', function() {
+ // 이미 css에서 + 표시, active 시 - 로 바꾸는 추가 css 필요 없이 간단 처리
+ if (this.classList.contains('active')) {
+ this.style.setProperty('--icon', "'-'");
+ } else {
+ this.style.setProperty('--icon', "'+'");
+ }
+ });
+ });
+ // 추가 아이콘 처리 안함 (대충 넘어감)
+ </script>
+ <style>
+ .faq-question.active::after {
+ content: '-' !important;
+ }
+ .faq-question::after {
+ content: '+';
+ }
+ </style>
 </body>
 </html>
